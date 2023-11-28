@@ -18,6 +18,9 @@ public class LoginPage extends BasePage {
     @FindBy(xpath = "//div[@data-testid='loginSubmit']")
     public WebElement submitBtn;
 
+    @FindBy(xpath = "//div[@data-testid='error_message']")
+    public WebElement errorMessage;
+
 //    @FindBy(xpath = "div [@class='css-901oao']")
 //    public WebElement element;
 
@@ -26,7 +29,27 @@ public class LoginPage extends BasePage {
         elementActions.writeText(loginInput, UserCredentials.ADMIN.getUsername());
         elementActions.writeText(passwordInput, UserCredentials.ADMIN.getPassword());
         elementActions.clickElement(submitBtn);
-
         return this;
     }
+
+    public LoginPage goToLoginPage(){
+        elementActions.moveToElement(enterLoginPage).clickElement(enterLoginPage);
+        return this;
+    }
+
+    public LoginPage login(String loginPhoneNumber){
+        elementActions.writeText(loginInput, loginPhoneNumber);
+        return this;
+    }
+
+    public LoginPage password(String pass){
+        elementActions.writeText(passwordInput, pass);
+        return this;
+    }
+
+    public LoginPage loginButton(){
+        elementActions.clickElement(submitBtn);
+        return this;
+    }
+
 }
