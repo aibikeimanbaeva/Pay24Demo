@@ -1,8 +1,10 @@
 package com.digital.enums;
 
-public enum UserCredentials {
-    ADMIN("admin", "Admin123!");
+import lombok.Getter;
 
+@Getter
+public enum UserCredentials {
+    ADMIN("777333744", "1234567");
     private final String username;
     private final String password;
 
@@ -11,11 +13,4 @@ public enum UserCredentials {
         this.password = password;
     }
 
-    public String getUsername() {
-        return username;
-    }
-
-    public String getPassword() {
-        return password;
-    }
 }
