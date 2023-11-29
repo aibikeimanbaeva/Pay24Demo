@@ -36,7 +36,7 @@ public class AkDoboAiylOkmotuuTest extends GovermentServisesTest {
         Assert.assertNotNull(akDoboAiylOkmotuuPage.clickTheService.getText());
 
     }
-    @Test(priority = 4)
+    @Test(priority = 5)
     public void checkSumInp() {
         akDoboAiylOkmotuuPage.fillUpTheSumInp("200");
         Assert.assertEquals(akDoboAiylOkmotuuPage.sumInp.getAttribute("value").trim(), "200");
