@@ -25,6 +25,8 @@ public class AkDoboAiylOkmotuuTest extends GovermentServisesTest {
 
     }
 
+
+
     @Test(priority = 3)
     public void checkFullNameInp() throws InterruptedException {
         akDoboAiylOkmotuuPage.fillUpTheFullNameInp("Aisuluu");
