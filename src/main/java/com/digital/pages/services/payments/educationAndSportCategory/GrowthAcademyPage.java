@@ -16,7 +16,7 @@ public class GrowthAcademyPage extends BasePage {
     public WebElement writeOffAccountsBlock;
     @FindBy(xpath = "(//div[@data-testid='debitCard_MasterCard'])[2]")
     public WebElement masterCardBlock;
-    @FindBy(xpath = "(//div[text()='Введите ФИО']/following-sibling::div//input)[1]")
+    @FindBy(xpath = "(//div[text()='Выберите ФИО']/following-sibling::div//input)[1]")
     public WebElement fullNameInp;
     @FindBy(xpath = "//div[text()='Выберите Область']/following-sibling::div[1]")
     public WebElement regionInp;

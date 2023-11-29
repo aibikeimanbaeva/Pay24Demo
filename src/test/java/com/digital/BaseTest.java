@@ -5,7 +5,9 @@ import com.digital.driver.Driver;
 import com.digital.helper.ElementActions;
 import com.digital.pages.HomePage;
 import com.digital.pages.LoginPage;
+import com.digital.pages.services.payments.govermentServises.aiylOkmotuu.AkDoboAiylOkmotuuPage;
 import com.digital.services.payments.educationAndSportCategory.EducationAndSportTest;
+import com.digital.services.payments.govermentServises.aiylOkmotuu.AkDoboAiylOkmotuuTest;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -17,6 +19,7 @@ public abstract class BaseTest {
     public HomePage homePage;
     public EducationAndSportTest educationAndSportTest;
     public ElementActions elementActions;
+    public AkDoboAiylOkmotuuTest akDoboAiylOkmotuuTest;
 
     @BeforeClass(alwaysRun = true)
     public void setUpBrowser() {
@@ -27,7 +30,7 @@ public abstract class BaseTest {
         homePage = new HomePage();
         elementActions = new ElementActions();
         educationAndSportTest = new EducationAndSportTest();
-
+        akDoboAiylOkmotuuTest= new AkDoboAiylOkmotuuTest();
     }
 
 //    @AfterClass(alwaysRun = true)
