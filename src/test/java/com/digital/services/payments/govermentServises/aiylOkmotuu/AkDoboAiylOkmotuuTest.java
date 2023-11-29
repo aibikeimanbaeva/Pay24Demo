@@ -18,8 +18,6 @@ public class AkDoboAiylOkmotuuTest extends GovermentServisesTest {
 
     }
 
-    ;
-
     @Test(priority = 2)
     public void checkINNInp() {
         akDoboAiylOkmotuuPage.fillUpTheINNInp("1107200001765");
